@@ -63,5 +63,20 @@ namespace BibliotecaLibri
             throw new Exception("non c'è il libro cercato");
 
         }
+
+        public List<Libri> ListaLibAutori(string autore)
+        {
+            List<Libri> Llibri = new List<Libri>();
+
+            for(int i = 0; i < ListaLibri.Count; i++)
+            {
+                if (ListaLibri[i].autore == autore)
+                {
+                    Llibri.Add(ListaLibri[i]);
+                }
+            }
+
+            return Llibri;
+        }
     }
 }
