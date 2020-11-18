@@ -17,6 +17,8 @@ namespace BibliotecaLibri
             OrarioChiusura = orarioChiusura;
         }
 
+      
+
         public string Nome
         {
             get;
@@ -54,7 +56,7 @@ namespace BibliotecaLibri
         {
             for (int i = 0; i < ListaLibri.Count; i++)
             {
-                if (ListaLibri[i].titolo == titolo)
+                if (ListaLibri[i].Titolo == titolo)
                 {
                     return ListaLibri[i];
                 }
@@ -70,7 +72,7 @@ namespace BibliotecaLibri
 
             for(int i = 0; i < ListaLibri.Count; i++)
             {
-                if (ListaLibri[i].autore == autore)
+                if (ListaLibri[i].Autore == autore)
                 {
                     Llibri.Add(ListaLibri[i]);
                 }
