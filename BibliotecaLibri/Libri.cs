@@ -103,5 +103,33 @@ namespace BibliotecaLibri
                 _nPag = value;
             }
         }
+        public string ReadingTime() 
+        {
+            string tempoLettura = "" ;
+            if (NPag < 100) 
+            {
+                tempoLettura = "tempo lettura = 1h";
+
+            }
+            if (NPag <= 100&&NPag>200 )
+            {
+                tempoLettura = "tempo lettura = 2h";
+
+            }
+            if (NPag > 200)
+            {
+                tempoLettura = "tempo lettura = 3h";
+
+            }
+            return tempoLettura;
+
+
+        }
+
+        public override string ToString()
+        {
+            return Autore + "/" + Titolo + "/" + AnnoPubblicazione + "/" + Editore + "/" + NPag ;
+        }
+
     }
 }
