@@ -7,14 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ListBox HorizontalAlignment="Left" Height="368" Margin="10,41,0,0" VerticalAlignment="Top" Width="183"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.029,-0.537" Width="183"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="234,10,0,0" VerticalAlignment="Top" Width="164"/>
-        <ListBox HorizontalAlignment="Left" Height="368" Margin="234,41,0,0" VerticalAlignment="Top" Width="164"/>
-        <Button x:Name="Creabiblioteca" Content="Button" HorizontalAlignment="Left" Margin="450,41,0,0" VerticalAlignment="Top" Width="138"/>
-        <Button x:Name="CreaLibro" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="138" Margin="450,77,0,0"/>
-        <Button x:Name="InfoLibro" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="138" Margin="450,122,0,0"/>
-        <Button x:Name="InfoBiblioteca" Content="Button" HorizontalAlignment="Left" Margin="450,165,0,0" VerticalAlignment="Top" Width="138" RenderTransformOrigin="-0.339,-1.089"/>
+        <ListBox HorizontalAlignment="Left" Height="368" Margin="10,41,0,0" VerticalAlignment="Top" Width="200" SelectionChanged="ListBox_SelectionChanged"/>
+        <Label Content="Biblioteche" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.029,-0.537" Width="200"/>
+        <Label Content="Libri" HorizontalAlignment="Left" Margin="582,10,0,0" VerticalAlignment="Top" Width="200"/>
+        <ListBox HorizontalAlignment="Left" Height="368" Margin="582,41,0,0" VerticalAlignment="Top" Width="200" SelectionChanged="ListBox_SelectionChanged_1"/>
+        <Button x:Name="Creabiblioteca" Content="Button" HorizontalAlignment="Left" Margin="215,41,0,0" VerticalAlignment="Top" Width="125" Click="Creabiblioteca_Click"/>
+        <Button x:Name="CreaLibro" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="452,41,0,0" Click="CreaLibro_Click"/>
+        <Button x:Name="InfoLibro" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="452,76,0,0" Click="InfoLibro_Click"/>
+        <Button x:Name="InfoBiblioteca" Content="Button" HorizontalAlignment="Left" Margin="215,76,0,0" VerticalAlignment="Top" Width="125"  Click="InfoBiblioteca_Click"/>
 
     </Grid>
 </Window>

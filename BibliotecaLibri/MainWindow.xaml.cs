@@ -20,9 +20,46 @@ namespace BibliotecaLibri
     /// </summary>
     public partial class MainWindow : Window
     {
+        //List<Biblioteca> Biblioteche;
+        //Biblioteca = Attuale;
+
         public MainWindow()
         {
             InitializeComponent();
+            //Biblioteche = new List<Biblioteca>();
+            //Attuale = new Biblioteca();
+        }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void ListBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void InfoBiblioteca_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void InfoLibro_Click(object sender, RoutedEventArgs e)
+        {
+            int tmp = lst_libri.SelectedIndex;
+            
+            MessageBox.Show(Attuale.);
+        }
+
+        private void CreaLibro_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void Creabiblioteca_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
