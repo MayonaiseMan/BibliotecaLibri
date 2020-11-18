@@ -54,7 +54,7 @@ namespace BibliotecaLibri
         {
             for (int i = 0; i < ListaLibri.Count; i++)
             {
-                if (ListaLibri[i].titolo = titolo)
+                if (ListaLibri[i].titolo == titolo)
                 {
                     return ListaLibri[i];
                 }
@@ -77,6 +77,11 @@ namespace BibliotecaLibri
             }
 
             return Llibri;
+        }
+
+        public int NumeroLibri()
+        {
+            return ListaLibri.Count;
         }
     }
 }
