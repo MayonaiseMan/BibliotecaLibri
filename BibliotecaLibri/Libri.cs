@@ -7,43 +7,100 @@ namespace BibliotecaLibri
 {
     public class Libri
     {
-        public int Autore
+        private string _autore;
+        private string _titolo;
+        private int _annoPub;
+        private string _editore;
+        private int _nPag;
+
+        public Libri(string a, string t, int ap, string e, int np) 
         {
-            get => default;
+            Autore = a;
+            Titolo = t;
+            AnnoPubblicazione = ap;
+            Editore=e;
+            NPag = np;
+
+        }
+
+        public string Autore
+        {
+            get
+            {
+                return _autore;
+            }
             set
             {
+                if (value == null)
+                {
+                    throw new Exception("errore nome autore");
+                }
+                _autore = value;
             }
         }
 
-        public int Titolo
+        public string Titolo
         {
-            get => default;
+            get 
+            {
+                return _titolo;
+            }
             set
             {
+                if (value == null) 
+                {
+                    throw new Exception("errore nome autore");
+                }
+                _titolo = value;
             }
         }
 
         public int AnnoPubblicazione
         {
-            get => default;
-            set
+            get
             {
+                return _annoPub;
+            }
+            set 
+            {
+                if ( value < 0)
+                {
+                    throw new Exception("errore data");
+                }
+                _annoPub=value;  
             }
         }
 
-        public int Editore
+        public string Editore
         {
-            get => default;
+
+            get
+            {
+                return _editore;
+            }
             set
             {
+                if (value == null)
+                {
+                    throw new Exception("errore nome dell'editore");
+                }
+                _editore = value;
             }
         }
 
         public int NPag
         {
-            get => default;
+            get
+            {
+                return _nPag;
+            }
             set
             {
+                if (value < 0)
+                {
+                    throw new Exception("errore numero pagine");
+                }
+                _nPag = value;
             }
         }
     }
